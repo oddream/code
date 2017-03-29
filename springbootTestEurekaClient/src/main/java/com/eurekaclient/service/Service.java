@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Service {
 
-	@RequestMapping("/{name}")
+	@RequestMapping("/service/{name}")
 	public String helloService(@PathVariable String name) {
-		return "hello,i'm client1:" + name + "!";
+		return "(i'm client1)hello : " + name + "!";
 	}
 }

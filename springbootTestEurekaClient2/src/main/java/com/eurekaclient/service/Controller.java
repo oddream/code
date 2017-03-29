@@ -13,8 +13,8 @@ public class Controller {
 	@Autowired
 	IClient1 client1;
 
-	@RequestMapping("/service/{name}")
+	@RequestMapping("/local/{name}")
 	public String getSentence(@PathVariable String name) {
-		return "x hello :" + client1.helloService(name);
+		return "(i'm client2) : " + client1.helloService(name);
 	}
 }

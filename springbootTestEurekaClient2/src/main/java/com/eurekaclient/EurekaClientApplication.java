@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
-@EnableFeignClients            //通过该注解，实现服务发现，注册
+@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
 public class EurekaClientApplication {

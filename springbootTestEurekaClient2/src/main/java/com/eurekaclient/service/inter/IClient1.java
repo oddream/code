@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @FeignClient(name = "cloud-client1")
 public interface IClient1 {
-	@RequestMapping(value = "/{name}",method = RequestMethod.GET)
+	@RequestMapping(value = "/service/{name}",method = RequestMethod.GET)
 	public String helloService(@PathVariable("name") String name);
 }
